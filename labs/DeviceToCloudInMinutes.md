@@ -3,7 +3,7 @@
 
 ## Description
 
-![Design](../media/DeviceToCloudInMinutesOverview.png)
+<img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/DeviceToCloudInMinutesOverview.png" width="75%" height="75%" />
 
 ## Pre-Requisites
 
