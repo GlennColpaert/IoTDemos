@@ -29,7 +29,7 @@ Below you can find a quick list of all the actions that are needed to setup this
 - Create IoTHub
 - Create EventHub
 - Create StreamAnalytics
-- (missing create service bus queue !!!)
+- Create ServiceBus Namespace and Queue
 - Configure EventHub
 - Configure IoTHub EndPoint
 - Configure IoTHub Routes
@@ -43,28 +43,41 @@ First step in this tutorial is to create a resource group. Resource Groups are a
 All resources in a Resource Group should share the same lifecycle. As you deploy, update and delete them togheter. Next to that Resource Groups are used to scope access control to different users.
 
 In our case we will create the **DeviceToCloud** Resource Group. 
+
 <img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/00_createresourcegroup.png" />
 
 ### Create IoTHub
 <img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/01_iothubcreation.png" />
+
 ### Create EventHub
 <img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/02_eventhubcreation.png" />
+
 ### Create StreamAnalytics
 <img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/03_streamanalyticscreation.png" />
-### (missing create service bus queue !!!)
+
+### Create ServiceBus Namespace and Queue
+<img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/02_eventhubcreation.png" />
+<img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/02_eventhubcreation.png" />
+
 ### Configure EventHub
 <img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/04_configureEventHubCreation.png" />
+
 ### Configure IoTHub EndPoint
 <img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/05_configureIotHubEndpoint01.png" />
 <img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/06_configureEndpointIoTHub.png" />
+
 ### Configure IoTHub Routes
 <img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/07_configureIoTHubRoute.png" />
+
 ### Configure StreamAnalytics EventHub Input
 <img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/08_configureStreamAnalyticsInput.png" />
+
 ### Configure StreamAnalytics PowerBI Output	
 <img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/09_configureoutputpowerbi_1.png" />
 <img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/09_configureoutputpowerbi_2.png" />
+
 ### Configure StreamAnalyrics ServiceBus Output
 <img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/10_configureServiceBusOutput.png" />
+
 ### Configure StreamAnalytics Query
 <img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/10_configureStreamanalyticsquery.png" />
