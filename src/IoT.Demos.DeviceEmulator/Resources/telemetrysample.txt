@@ -1,0 +1,1 @@
+﻿{9} "Hostname": "{0}", "Timestamp": "{1}", "Temperature": {2}, "Humidity": {3}, "Month": {4}, "Day": {5}, "Hour": {6}, "Minute": {7}, "Second": {8} {10}
