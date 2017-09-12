@@ -13,7 +13,7 @@ namespace IoT.Demos.DeviceEmulator
         static DeviceClient deviceClient;
         static string iotHubUri = "<insert iotHubURI>";
         static string deviceKey = "<insert device key>";
-        static int _tempHigh = 25;
+        static int _tempHigh = 26;
         static int _tempLow = 20;
         static int _humHigh = 55;
         static int _humLow = 50;
@@ -21,11 +21,11 @@ namespace IoT.Demos.DeviceEmulator
         static void Main(string[] args)
         {
             Console.WriteLine("Simulated Device\n");
-            deviceClient = DeviceClient.Create(iotHubUri, new DeviceAuthenticationWithRegistrySymmetricKey("DemoDevice", deviceKey), TransportType.Mqtt);
+            deviceClient = DeviceClient.Create(iotHubUri, new DeviceAuthenticationWithRegistrySymmetricKey("<IoT Hub Device Name>", deviceKey), TransportType.Mqtt);
 
             while (true)
             {
-                var resultString = SimulateDevice("DemoDevice");
+                var resultString = SimulateDevice("<IoT Hub Device Name>");
                 SendDeviceToCloudMessagesAsync(resultString);
 
                 // I should probably make this configurable

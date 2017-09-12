@@ -41,7 +41,7 @@ Below you can find a quick list of all the actions that are needed to setup this
 - Configure LogicApps
 
 ### Create Resource Group (Optional)
-First step in this tutorial is to create a resource group. Resource Groups are a logical containers that are uses to group related entities.
+First step in this tutorial is to create a resource group. Resource Groups are logical containers that are used to group related entities.
 All resources in a Resource Group should share the same lifecycle. As you deploy, update and delete them togheter. Next to that Resource Groups are used to scope access control to different users.
 
 In our case we will create the **DeviceToCloud** Resource Group. 
@@ -54,7 +54,7 @@ Next step in this walkthrough is to create an **IoTHub** in the Azure Portal. Gi
 <img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/01_iothubcreation.png" />
 
 ### Create EventHub
-When messages arrive in IoTHub we will route them directly to **EventHub**, therefor we need to create an EventHub namespace. In theorie this step is optional as you can directly link your IoTHub to stream analytics. But I've included this in this demo to demonstrate the **routing** functionality of IoTHub further down this excercise. 
+When messages arrive in IoTHub we will route them directly to **EventHub**, therefore we need to create an EventHub namespace. In theory this step is optional as you can directly link your IoTHub to stream analytics. But I've included this in this demo to demonstrate the **routing** functionality of IoTHub further down this excercise. 
 
 To create the **EventHub** give it a valid name, choose the pricing tier and leave all other settings on default. Don't forget to add it to the Resource Group you created in the first step. Below is an example of what your configuration should look like.
 
@@ -68,7 +68,7 @@ Give your job an appropriate name and select the correct Resource Group. Below i
 <img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/03_streamanalyticscreation.png" />
 
 ### Create ServiceBus Namespace and Queue
-When a telemetry message hits a certain **temperature threshold** our Stream Analytics job will post a message on a **ServiceBus Queue**. Thefore we are creating the ServiceBus namespace and queue in this step.
+When a telemetry message hits a certain **temperature threshold** our Stream Analytics job will post a message on a **ServiceBus Queue**. Therefore we are creating the ServiceBus namespace and queue in this step.
 
 Create a namespace, give it a appropriate name and select the correct Resource Group. Below is an example of what your configuration should look like.
 
@@ -79,7 +79,7 @@ When the namespace is created add a new **Queue** with the configuration shown b
 <img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/16_sbcreatequeue.png" />
 
 ### Configure EventHub
-Now that everything is setup we are ready to hook all the components togheter. But let's start first by adding an **EventHub** to our **EventHub Namespace**.
+Now that everything is setup we are ready to hook all the components together. But let's start first by adding an **EventHub** to our **EventHub Namespace**.
 Click on the **EventHub** you created in step 2 and click on **Event Hubs** then select **+Event Hub** and add a new Event hub. Below is an example of what your configuration should look like.
 
 <img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/04_configureEventHubCreation.png" />
@@ -96,7 +96,7 @@ Add a new **EventHubEndpoint** and choose the **Event Hub** we created in this w
 
 ### Configure IoTHub Routes
 Go to your **IoTHub** Endpoint created in Step 1 and choose **Routes**, click on **+Add** to add a new Route.
-In this demo we will create a simple Route and just create a **"MatchThemAll"** route, basically we will use IoTHub routing to route all our incomming messages to the configured endpoint. Below is an example of what your configuration should look like.
+In this demo we will create a simple Route and just create a **"MatchThemAll"** route, basically we will use IoTHub routing to route all our incoming messages to the configured endpoint. Below is an example of what your configuration should look like.
 
 <img src="https://github.com/GlennColpaert/IoTDemos/blob/master/media/walkthrough/07_configureIoTHubRoute.png" />
 
