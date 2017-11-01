@@ -1,0 +1,12 @@
+language: csharp
+dotnet: 1.1.0
+dist: trusty
+script:
+- dotnet restore src/IoT.Demos.DeviceEmulator
+- dotnet restore src/IoT.Demos.RaspberryPI.SenseHAT
+- dotnet build src/IoT.Demos.DeviceEmulator
+- dotnet build src/IoT.Demos.RaspberryPI.SenseHAT
+notifications:
+  email:
+    on_success: never
+    on_failure: always
