@@ -12,13 +12,13 @@ This repository contains all the code & labs I created to give an overview of th
 
 This solutions contains different projects and demo's.
 
-#### DeviceEmulator
+### **DeviceEmulator** ###
 
-Basics **Console Application** that generates random Temperature and Humidty values. These values are then passed toward Azure IoT Hub.
+Basics Console Application that generates random Temperature and Humidty values. These values are then passed toward Azure IoT Hub.
 
-#### RaspBerryPI.SenseHat
+### **RaspBerryPI.SenseHat** ###
 
-**Windows Universal Application** that connect to a RaspBerryPI equiped with a SenseHat. Reads all sensor values and processes them towards Azure IoT Hub. This project also includes **CloudToDevice messaging** and **Direct Methods**.
+Windows Universal Application that connect to a RaspBerryPI equiped with a SenseHat. Reads all sensor values and processes them towards Azure IoT Hub. This project also includes CloudToDevice messaging and Direct Methods.
 
 This project makes intensive use of the [RPi.Sensehat repository](https://github.com/emmellsoft/RPi.SenseHat).
 
