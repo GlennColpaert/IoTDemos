@@ -12,7 +12,7 @@ namespace IoT.Demos.RaspberryPI.SenseHAT
 
         public IoTHubConnection()
         {
-            _deviceClient = DeviceClient.Create("iot-gc-demo-hub.azure-devices.net", new DeviceAuthenticationWithRegistrySymmetricKey("pi", "7zthtJqeFAJJh+n8GzjQegKX9L2AA+XbYer4RLXzE/g="), TransportType.Mqtt);
+            _deviceClient = DeviceClient.Create("", new DeviceAuthenticationWithRegistrySymmetricKey("pi", ""), TransportType.Mqtt);
             _deviceClient.SetMethodHandlerAsync("InvokeMethod", InvokeMethod, null).Wait();
         }
         
